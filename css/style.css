@@ -1,0 +1,271 @@
+body{
+    margin: 0;
+    
+}
+/* =============== HEADER =============== */
+header{
+    background-color: #30343F;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7%;
+    height: 144px;
+
+}
+a{
+    font-size: 20px;
+    letter-spacing: 0em;
+    padding: 0 20px;
+    color:#FFFFFF;
+    text-decoration: none;
+    font-family: 'Raleway';
+    line-height: 30px;
+    text-align: left;
+}
+a:hover{
+    list-style-type: none;
+    color:white
+}
+/*logo*/
+.header__logo{
+    height: 65.19194793701172px;
+    width: 372px;
+    left: 110px;
+    top: 39px;
+    border-radius: 0px;  
+}
+.img__car{
+    height: 24.426172256469727px;
+    width: 32px;
+    left: 0.70068359375px;
+    top: 0.61572265625px;
+    border-radius: 0px;
+}
+.header__nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.header__nav li{
+    list-style-type: none;
+}
+
+
+
+
+
+
+/* =============== MAIN =============== */
+main{
+    background-color: #FFFFFF;    
+}
+/*main index - seccion 1*/
+.main__new{
+    background-image: url('file:///C:/Users/Usuario/Desktop/cac-Proyecto%20Final/multimedia/funkos-banner.webp');
+    background-size: cover;
+    background-color: rgb(70,70,70);
+    background-position: 0px -330px;
+    background-repeat: no-repeat;
+    zoom:130%;
+    padding: 7.3% 7%; 
+    background-blend-mode: soft-light;
+    backdrop-filter: blur(80px);
+}
+.main__new h3{
+    font-family: 'Raleway';
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:white;
+}
+.main__new p{
+    font-family: 'Raleway';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:white;
+}
+.main__new a{
+    color:black;
+    background-color: white;
+    border-radius: 40px;
+    padding: 8px 63px;
+    border-radius: 'nullpx';
+}
+
+/*main index - seccion 2*/
+.main__coleccion{
+    display: flex;
+    flex-direction: column;
+    background-color: none;
+    padding: 5% 7%; 
+}
+.coleccion__item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+hr{
+    width: 645px;
+    opacity: 100%;
+    border: 3px solid #FF3333;
+    height: 0px;
+    left: 110px;
+    top: 949.5px;
+    border-radius: 'undefinedpx';
+    margin: 6% 0 8% 0;
+}
+.coleccion__item h2{
+    width: 441px;
+    font-family: 'Raleway';
+    font-size: 46px;
+    line-height: 54px;
+}
+.coleccion__item p{
+    height: 56px;
+    width: 458px;
+    font-family: 'Raleway';
+    font-size: 24px;
+    line-height: 28px;
+    color: #4F4F4F;
+    margin-top: 1% 0;
+}
+.coleccion__item a{
+    font-family: 'Inter';
+    font-size: 24px;
+    line-height: 29px;
+    color:white;
+    background-color: #30343F;
+    border-radius: 40px;
+    padding: 22px 55px;
+    font-style: medium;
+}
+
+.img__coleccion{
+    height: 650px;
+    width: 650px;
+    position: relative;
+    left: -74px;
+    top: 0px;
+}
+.img__coleccion-op{
+    height: 650px;
+    width: 650px;
+    position: relative;
+    left: 95px;
+    top: 0px;
+}
+
+/*index - lanzamientos*/
+.main__lanzamientos{
+    padding: 0 7%;
+}
+.index__lanzamientos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+h4{
+    font-family: 'Raleway';
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 54px;
+    letter-spacing: 0em;
+}
+.img__lanz{
+    height: 352px;
+    width: 359.9664611816406px;
+    z-index: -1;
+}
+
+.lanz__titulo{
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+}
+
+.lanz__subtitulo{
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.lanz__precio{
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+.lanz__pago{
+    font-family: 'Inter';
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    color:#1D84B5;
+    padding-bottom: 20%;
+}
+
+.lanz__sup{
+    background-color: red;
+    color:white;
+    position: relative;
+    height: 30px;
+    width: 96.12741088867188px;
+    left: 264px;
+    top: 30px;
+}
+.lanz_p{
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding-top: 6px;
+}
+
+
+/* =============== FOOTER =============== */
+footer{
+    height: 343px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5% 7%;
+    align-items: stretch;
+    background-color: #30343F;
+}
+footer section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer__items li{
+    list-style: none;
+    text-align: left;
+    padding: 2% 0;
+}
+.footer__items{
+    padding: 0;
+    margin-bottom: 20%;
+}
+footer p {
+    color:#FFFFFF;
+    font-family: 'Raleway';
+    text-align: center;
+    margin-top:30px;
+}
+.footer__img{
+    margin-top:5%;
+    margin-right: 2%;
+}
