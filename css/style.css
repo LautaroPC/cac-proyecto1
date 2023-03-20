@@ -62,7 +62,7 @@ main{
 }
 /*main index - seccion 1*/
 .main__new{
-    background-image: url("file:///C:/Users/Usuario/Desktop/cac-proyecto1/multimedia/funkos-banner.webp");
+    background-image:url(../multimedia/funkos-banner.webp);
     background-size: cover;
     background-color: rgb(70,70,70);
     background-position: 0px -330px;
