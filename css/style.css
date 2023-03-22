@@ -9,9 +9,8 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 7%;
+    padding: 0 5%;
     height: 144px;
-
 }
 a{
     font-size: 20px;
@@ -27,12 +26,11 @@ a:hover{
     list-style-type: none;
     color:white
 }
+
 /*logo*/
 .header__logo{
     height: 65.19194793701172px;
     width: 372px;
-    left: 110px;
-    top: 39px;
     border-radius: 0px;  
 }
 .img__car{
@@ -42,6 +40,7 @@ a:hover{
     top: 0.61572265625px;
     border-radius: 0px;
 }
+/*navegador en header*/
 .header__nav{
     display: flex;
     flex-direction: row;
@@ -50,17 +49,36 @@ a:hover{
 .header__nav li{
     list-style-type: none;
 }
-
-
-
-
-
-
+.dropdown-item{
+    font-weight: 500;
+}
+.nav__item{
+    color:black;
+    font-weight: bolder;
+    text-align: right;
+}
+.dropdown-item:hover{
+    background-color:#1D84B5;
+    color: white;
+    font-weight: bolder;
+}
+.nav__barra{
+    padding: 0;
+    margin: 0;
+    width: auto;
+}
+.card-item{
+    height: 40px;    
+}
+.dropdown-item{
+    text-align: center;
+}
 /* =============== MAIN =============== */
 main{
-    background-color: #FFFFFF;    
+    background-color: #FFFFFF;  
 }
-/*main index - seccion 1*/
+/*-------------------------------------*/
+/* INDEX - SECCION 1 */
 .main__new{
     background-image:url(../multimedia/funkos-banner.webp);
     background-size: cover;
@@ -68,7 +86,7 @@ main{
     background-position: 0px -330px;
     background-repeat: no-repeat;
     zoom:130%;
-    padding: 7.2% 7%; 
+    padding: 7.3% 7%; 
     background-blend-mode: soft-light;
     backdrop-filter: blur(80px);
 }
@@ -98,14 +116,14 @@ main{
     border-radius: 'nullpx';
 }
 
-/*main index - seccion 2*/
+/* INDEX - SECCION 2 - COLECCION*/
 .main__coleccion{
     display: flex;
     flex-direction: column;
-    background-color: none;
     padding: 5% 7%; 
+    margin: 0 2%; 
 }
-.coleccion__item{
+.coleccion__card{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -121,13 +139,13 @@ hr{
     border-radius: 'undefinedpx';
     margin: 6% 0 8% 0;
 }
-.coleccion__item h2{
+.coleccion__card h2{
     width: 441px;
     font-family: 'Raleway';
     font-size: 46px;
     line-height: 54px;
 }
-.coleccion__item p{
+.coleccion__card p{
     height: 56px;
     width: 458px;
     font-family: 'Raleway';
@@ -136,7 +154,7 @@ hr{
     color: #4F4F4F;
     margin-top: 1% 0;
 }
-.coleccion__item a{
+.coleccion__card a{
     font-family: 'Inter';
     font-size: 24px;
     line-height: 29px;
@@ -146,27 +164,26 @@ hr{
     padding: 22px 55px;
     font-style: medium;
 }
-
-.img__coleccion{
+.card__img{
     height: 650px;
     width: 650px;
     position: relative;
-    left: -74px;
+    left: -65px;
     top: 0px;
 }
-.img__coleccion-op{
+.card__img-op{
     height: 650px;
     width: 650px;
     position: relative;
-    left: 95px;
-    top: 0px;
+    left: 35px;
+    top: 10px;
 }
-
-/*index - lanzamientos*/
+/* INDEX - SECCION 3 - lanzamientos*/
 .main__lanzamientos{
     padding: 0 7%;
+    margin: 0 2%; 
 }
-.index__lanzamientos{
+.box__card{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -178,43 +195,7 @@ h4{
     line-height: 54px;
     letter-spacing: 0em;
 }
-.img__lanz{
-    height: 352px;
-    width: 359.9664611816406px;
-    z-index: -1;
-}
-
-.lanz__titulo{
-    font-family: 'Inter';
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 17px;
-}
-
-.lanz__subtitulo{
-    font-family: 'Inter';
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 22px;
-}
-
-.lanz__precio{
-    font-family: 'Inter';
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
-}
-
-.lanz__pago{
-    font-family: 'Inter';
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 15px;
-    color:#1D84B5;
-    padding-bottom: 20%;
-}
-
-.lanz__sup{
+.card__sup{
     background-color: red;
     color:white;
     position: relative;
@@ -223,7 +204,7 @@ h4{
     left: 264px;
     top: 30px;
 }
-.lanz_p{
+.card_p{
     font-family: 'Inter';
     font-size: 14px;
     font-weight: 500;
@@ -232,6 +213,320 @@ h4{
     text-align: center;
     padding-top: 6px;
 }
+.cards__img{
+    height: 352px;
+    width: 359.9664611816406px;
+    z-index: -1;
+}
+.card__titulo{
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+}
+.card__sub{
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+}
+.card__precio{
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+}
+.card__pago{
+    font-family: 'Inter';
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    color:#1D84B5;
+    padding-bottom: 20%;
+}
+/*-------------------------------------*/
+/* SHOP - SECCION 1 */
+h5{
+    font-family: 'Inter';
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: bolder;
+}
+b{
+    font-family: 'Inter';
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: bolder;
+}
+.main__shop{
+    display: flex;
+    flex-direction: column;
+    margin: 2% 0;
+}
+.shop{
+    display: flex;
+    flex-direction: row;
+}
+.shop__form{
+    padding: 7% 7%;
+}
+.form__seccion{
+    padding-bottom: 8%;
+}
+.form__seccion input{
+    padding: 7px;
+    border-radius: 7px;
+    font-size: 20px;
+    color:#B9B9B9;
+    height: 44.284820556640625px;
+    width: 243.03369140625px;
+    margin: 2% 0;   
+}
+.form__seccion .precio__cuadro{
+    width: 60px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 7px;
+    margin: 0 9px;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    color:#B9B9B9;
+    opacity: 100%;
+    text-align: center;
+}
+.form__seccion label{
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+}
+#orden__sub{
+    border-radius: 7px;
+    font-size: 18px;
+    font-family: 'Inter';
+    font-weight: 500;
+    padding: 12px 6px;
+    border: 2px solid black;
+    color:#8b8181;
+    height: 44.284820556640625px;
+    width: 243.03369140625px;
+    margin: 2% 0;
+}
+.card__cuadro{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: left;
+    padding: 0 20px;
+}
+.filtrar__sub{
+    border:2px solid black;
+}
+
+.card__cuadro .filtrar__sub{
+    height: 23px;
+    width: 23px;
+}
+.card__cuadro label{
+    height: 22px;
+    padding: 3%;
+    font-weight:600;
+}
+
+/* SHOP - SECCION 2 */
+.seccion__lanzamientos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-top: 5%;
+    position: relative;
+    left: -75px;
+    margin-bottom: 0;
+}
+.shop__img{
+    height: 366px;
+    width: 363.00836181640625px;
+}
+.shop__sup{
+    background-color: red;
+    color:white;
+    position: relative;
+    height: 30px;
+    width: 96.12741088867188px;
+    left: 252px;
+    top: 30px;
+}
+.shop__pago{
+    font-family: 'Inter';
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    color:#1D84B5;
+    padding-bottom: 3%;
+}
+.img__boton2{
+    width: 25%;
+    position: relative;
+    left: 45%;
+}
+/*-------------------------------------*/
+/* ITEMS - SECCION 1*/
+.main__items{
+    padding: 3% 7%;
+    margin: 0 2%; 
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.items__card{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+.items__img{
+    height: 550px;
+    width: 550px;
+}
+.seccion__items{
+   margin-top: 7%; 
+   margin-left: 5%;
+}
+.items__titulo{
+    height: 19px;
+    width: 111.3209228515625px;
+    left: 726.74560546875px;
+    top: 326.6346435546875px;
+    border-radius: 'undefinedpx';
+    color:#333333;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.items__sub{
+    height: 46px;
+    width: 576.84375px;
+    font-family: 'Inter';
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: 0em;
+    color:#111111;
+}
+.items__parrafo{
+    height: 58px;
+    width: 570.705078125px;
+    font-family: 'Inter';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    color:#333333;        
+}
+.items__precio{
+    height: 46px;
+    width: 210.52294921875px;
+    font-family: 'Inter';
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 46px;
+    letter-spacing: 0em;
+    color:#333333;  
+}
+.items__boton{
+    margin-bottom: 3%;    
+}
+.items__pago{
+    height: 17px;
+    width: 333.197021484375px;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    color:#1D84B5;
+}
+
+/* ITEMS - SECCION 2*/
+.main__items .items__lanzamientos{
+    margin-top: 10%;
+}
+/* ----------------- MAIN CONTACTO -----------------------*/
+.main__contacto{
+    padding:5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../multimedia/fondocontacto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 88%;
+    background-position: 0 -20px;
+}
+.form__contacto{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10%;
+    border: 2px solid white;
+    padding: 4% 5% 2% 5%;
+    background-color: white;
+    opacity: 88%;
+}
+.form__contacto h4{
+    margin-bottom: 7%;
+    font-family: 'Inter';
+    letter-spacing: 0.2em;
+    color:#1D84B5;
+    font-weight: bolder;
+    padding: 1%;
+    font-stretch: 700;
+}
+.form__contacto input, textarea{
+    margin: 0 10% 7% 10%;
+    font-weight: bolder;
+}
+
+.contacto-boton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.contacto-boton input{
+    color:white;
+    background-color: #30343F;
+    border-radius: 30%;
+    padding: 4% 5%;
+    font-family: 'Inter';
+}
+
+.card-boton{
+    font-size: 12px;
+}
+.card-boton:hover{
+    background-color: #1D84B5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* =============== FOOTER =============== */
@@ -268,4 +563,14 @@ footer p {
 .footer__img{
     margin-top:5%;
     margin-right: 2%;
+}
+
+
+
+
+
+
+
+.boton2{
+    margin: 0;
 }

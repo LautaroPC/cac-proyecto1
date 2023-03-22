@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funkoshop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="../multimedia/branding/logo_light_horizontal.svg" class="header__logo" alt="">
+        </div>
+        <div>
+            <ul class="header__nav">
+                <li class="dropdown"><a class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="shop.html">SHOP</a>
+                    <ul class="dropdown-menu">
+                        <li class="card-item"><a class="dropdown-item"  href="#">Harry Potter</a></li>
+                        <li class="card-item"><a class="dropdown-item" href="#">Star Wars</a></li>
+                        <li class="card-item"><a class="dropdown-item" href="#">Pokemon</a></li>
+                    </ul>
+                </li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+                <li><a href="compra.html"><img src="../multimedia/icons/cart-icon.svg" class="img__car" alt=""></a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="main__shop">
+        <section class="shop">
+            <section class="shop__form">
+                <form action="">
+                    <div class="form__seccion">
+                        <h5>BUSCAR</h5>
+                        <input type="text" placeholder="item o categoria">
+                    </div>
+                    <div class="form__seccion">
+                        <h5>ORDENAR POR</h5>
+                        <select name="" id="orden__sub">
+                            <option value="Mayor a menor">Mayor a menor</option>
+                            <option value="Menor a mayor">Menor a mayor</option>
+                            <option value="Destacados">Destacados</option>
+                        </select>
+                    </div>
+                    <div class="form__seccion">
+                        <h5>PRECIO</h5>
+                        <b>MIN</b><input class="precio__cuadro" type="text" placeholder="0"><b> - MAX</b><input class="precio__cuadro" type="text" placeholder="0">
+                    </div>
+                    <div class="form__seccion">
+                        <h5>FILTRAR</h5>
+                        <div class="card__cuadro">
+                            <input class="filtrar__sub" type="checkbox" name="filtrar" id="Nuevo" value="Nuevo">
+                            <label for="Nuevo">NUEVOS</label>
+                        </div>
+                        <div class="card__cuadro">
+                            <input class="filtrar__sub" type="checkbox" name="filtrar" id="Oferta" value="Oferta">
+                            <label for="Oferta">OFERTAS</label>
+                        </div>
+                        <div class="card__cuadro">
+                            <input class="filtrar__sub" type="checkbox" name="filtrar" id="Edicion-especial" value="Edicion-especial">
+                            <label for="Edicion-especial">EDICIÓN ESPECIAL</label>
+                        </div>
+                        <div class="card__cuadro">
+                            <input class="filtrar__sub" type="checkbox" name="filtrar" id="Favoritos" value="Favoritos">
+                            <label for="Favoritos">FAVORITOS</label>
+                        </div>
+                    </div>
+                </form> 
+            </section>
+            <section class="seccion__lanzamientos">
+                <div class="muñecos__lanz">
+                    <div class="shop__sup">
+                        <p class="card_p">NUEVO</p>
+                    </div>
+                    <img class="shop__img" src="../multimedia/star-wars/trooper-1.webp" alt="">
+                    <p class="card__titulo">STAR WARS</p>
+                    <p class="card__sub">STORMTROOPER LIGHTSABER</p>
+                    <p class="card__precio">$ 1799,99.-</p>
+                    <p class="shop__pago">3 CUOTAS SIN INTERÉS</p>
+                </div>
+                <div class="muñecos__lanz">
+                    <div class="shop__sup">
+                        <p class="card_p">NUEVO</p>
+                    </div>
+                    <img class="shop__img" src="../multimedia/pokemon/pidgeotto-1.webp" alt="">
+                    <p class="card__titulo">POKEMON</p>
+                    <p class="card__sub">PIDGEOTTO</p>
+                    <p class="card__precio">$ 1799,99.-</p>
+                    <p class="shop__pago">3 CUOTAS SIN INTERÉS</p>
+                </div>
+                <div class="muñecos__lanz">
+                    <div class="shop__sup">
+                        <p class="card_p">NUEVO</p>
+                    </div>
+                    <img class="shop__img" src="../multimedia/harry-potter/luna-1.webp" alt="">
+                    <p class="card__titulo">HARRY POTTER</p>
+                    <p class="card__sub">LUNA LOVEGOOD LION MASK</p>
+                    <p class="card__precio">$ 1799,99.-</p>
+                    <p class="shop__pago">3 CUOTAS SIN INTERÉS</p>
+                </div>
+                <div class="muñecos__lanz">
+                    <div class="shop__sup">
+                        <p class="card_p">NUEVO</p>
+                    </div>
+                    <img class="shop__img" src="../multimedia/star-wars/trooper-1.webp" alt="">
+                    <p class="card__titulo">STAR WARS</p>
+                    <p class="card__sub">STORMTROOPER LIGHTSABER</p>
+                    <p class="card__precio">$ 1799,99.-</p>
+                    <p class="shop__pago">3 CUOTAS SIN INTERÉS</p>
+                </div>
+                <div class="muñecos__lanz">
+                    <div class="shop__sup">
+                        <p class="card_p">NUEVO</p>
+                    </div>
+                    <img class="shop__img" src="../multimedia/pokemon/pidgeotto-1.webp" alt="">
+                    <p class="card__titulo">POKEMON</p>
+                    <p class="card__sub">PIDGEOTTO</p>
+                    <p class="card__precio">$ 1799,99.-</p>
+                    <p class="shop__pago">3 CUOTAS SIN INTERÉS</p>
+                </div>
+                <div class="muñecos__lanz">
+                    <div class="shop__sup">
+                        <p class="card_p">NUEVO</p>
+                    </div>
+                    <img class="shop__img" src="../multimedia/harry-potter/luna-1.webp" alt="">
+                    <p class="card__titulo">HARRY POTTER</p>
+                    <p class="card__sub">LUNA LOVEGOOD LION MASK</p>
+                    <p class="card__precio">$ 1799,99.-</p>
+                    <p class="shop__pago">3 CUOTAS SIN INTERÉS</p>
+                </div>
+                <div class="muñecos__lanz">
+                    <div class="shop__sup">
+                        <p class="card_p">NUEVO</p>
+                    </div>
+                    <img class="shop__img" src="../multimedia/star-wars/trooper-1.webp" alt="">
+                    <p class="card__titulo">STAR WARS</p>
+                    <p class="card__sub">STORMTROOPER LIGHTSABER</p>
+                    <p class="card__precio">$ 1799,99.-</p>
+                    <p class="shop__pago">3 CUOTAS SIN INTERÉS</p>
+                </div>
+                <div class="muñecos__lanz">
+                    <div class="shop__sup">
+                        <p class="card_p">NUEVO</p>
+                    </div>
+                    <img class="shop__img" src="../multimedia/pokemon/pidgeotto-1.webp" alt="">
+                    <p class="card__titulo">POKEMON</p>
+                    <p class="card__sub">PIDGEOTTO</p>
+                    <p class="card__precio">$ 1799,99.-</p>
+                    <p class="card__pago">3 CUOTAS SIN INTERÉS</p>
+                </div>
+                <div class="muñecos__lanz mb-5">
+                    <div class="shop__sup">
+                        <p class="card_p">NUEVO</p>
+                    </div>
+                    <img class="shop__img" src="../multimedia/harry-potter/luna-1.webp" alt="">
+                    <p class="card__titulo">HARRY POTTER</p>
+                    <p class="card__sub">LUNA LOVEGOOD LION MASK</p>
+                    <p class="card__precio">$ 1799,99.-</p>
+                    <p class="shop__pago">3 CUOTAS SIN INTERÉS</p>
+                </div>
+            </section>
+        </section>
+        <img class="img__boton2" src="../multimedia/boton2.JPG" alt="">
+    </main>
+    <footer>
+        <section class="footer__nav">
+            <div>
+                <ul class="footer__items">
+                    <li><a href="html/shop.html">SHOP</a></li>
+                    <li><a href="html/registrar.html">REGISTRARSE</a></li>
+                    <li><a href="html/login.html">INGRESAR</a></li>
+                    <li><a href="html/contacto.html">CONTACTO</a></li>
+                </ul>
+            </div>
+            <div class="footer__img">
+                <img src="../multimedia/branding/isotype.svg" alt="">
+            </div>
+        </section>
+        <p>All rights reserved 2022 - Funkoshop & copy;</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>       
+</body>
+</html>
