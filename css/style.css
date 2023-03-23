@@ -462,6 +462,7 @@ b{
 .main__contacto{
     padding:5%;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     background-image: url(../multimedia/fondocontacto.jpg);
@@ -505,7 +506,6 @@ b{
     padding: 4% 5%;
     font-family: 'Inter';
 }
-
 .card-boton{
     font-size: 12px;
 }
@@ -514,14 +514,61 @@ b{
 }
 
 
-
-
-
-
-
-
-
-
+.main__login{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../multimedia/login-fondo.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 88%;
+    padding:5% 15%;
+    background-position: 0 -20px;
+}
+.form__login{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    background-color:white;
+    opacity: 88%;
+    text-align: center;
+    margin:0;
+}
+h6{
+    margin-bottom: 7%;
+    padding: 1%;
+    font-size: 50px;
+    font-family: 'Raleway';
+    font-weight: bolder;
+    line-height: 54px;    
+    color:#1D84B5;
+    letter-spacing: 0.2em;
+    text-align: center;
+}
+.login1{
+    padding: 4% 4% 2% 4%;
+    margin-right: 5%;
+    border-radius: 7%;
+}
+.login2{
+    padding: 6% 7% 3% 7%;
+    margin-left: 8%;
+    border-radius: 8%;
+}
+.login1 input, textarea{
+    margin: 0 10% 7% 10%;
+    font-weight: bolder;
+    
+}
+.login2 input, textarea{
+    margin: 0 10% 10% 10%;
+    font-weight: bolder;
+    
+}
+.login2 .card-boton{
+    padding: 6% 7.8%;
+}
 
 
 
