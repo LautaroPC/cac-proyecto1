@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,59 +9,53 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Raleway:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
     <header>
         <div>
-            <a href="../index.html"><img src="../multimedia/branding/logo_light_horizontal.svg" class="header__logo" alt=""></a>
+            <a href="../index.html"><img src="../multimedia/branding/logo_light_horizontal.svg" class="header__logo"
+                    alt=""></a>
         </div>
         <div>
             <ul class="header__nav">
-                <li class="dropdown"><a class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="shop.html">SHOP</a>
-                    <ul class="dropdown-menu">
-                        <li class="card-item"><a class="dropdown-item"  href="#">Harry Potter</a></li>
-                        <li class="card-item"><a class="dropdown-item" href="#">Star Wars</a></li>
-                        <li class="card-item"><a class="dropdown-item" href="#">Pokemon</a></li>
-                    </ul>
-                </li>
-                <li><a href="contacto.html">CONTACTO</a></li>
-                <li><a href="login.html">LOGIN</a></li>
-                <li><a href="compra.html"><img src="../multimedia/icons/cart-icon.svg" class="img__car" alt=""></a></li>
+                <li><a href="#">SALIR</a></li>
             </ul>
         </div>
     </header>
     <main class="main__login">
-        <form class="form__login login1" action="">
-            <h6>REGISTRARSE</h6>
-            <input type="email" name="correo" placeholder="Email">
-            <input type="password" name="Contraseña" placeholder="Contraseña">
-            <input type="password" name="Contraseña" placeholder="Repita la contraseña">
-            <div class="contacto-boton">
-                <input class="card-boton btn btn-success rounded-4" type="submit" value="ENVIAR">
+        <form class="form__login" action="">
+            <h6>INGRESAR A MI CUENTA</h6>
+            <div class="form-nav">
+                <p class="email">Email:</p>
+                <input type="email" name="correo" placeholder="johndoe@correo.com">
             </div>
-        </form>
-        <form class="form__login login2" action="">
-            <h6 class="mb-4">LOGIN</h6>
-            <input type="email" name="correo" placeholder="Email">
-            <input type="password" name="Contraseña" placeholder="Contraseña">
-            <p class="mb-4"><u> olvide mi contraseña</u></p>
-            <div class="contacto-boton">
-                <input class="card-boton btn btn-success rounded-4" type="submit" value="ENTRAR">
+            <div class="form-nav contraseña">
+                <p class="contraseña">Contraseña:</p>
+                <input type="password" name="Contraseña" placeholder="*********">
             </div>
+            <div class="form-subnav">
+                <input class="btn boton-nav " type="submit" value="Ingresar">
+                <div class="bot-recordar">
+                    <input type="checkbox" name="filtrar" id="recordarme" value="recordarme">
+                    <label for="recordarme">Recordarme</label>
+                </div>
+            </div>
+            <p class="login__parrafo mb-4">olvidé mi contraseña</p>
         </form>
-        
     </main>
     <footer>
         <section class="footer__nav">
             <div>
                 <ul class="footer__items">
                     <li><a href="shop.html">SHOP</a></li>
-                    <li><a href="login.html">REGISTRARSE</a></li>
+                    <li><a href="registro.html">REGISTRARSE</a></li>
                     <li><a href="login.html">INGRESAR</a></li>
                     <li><a href="contacto.html">CONTACTO</a></li>
                 </ul>
@@ -71,7 +66,12 @@
         </section>
         <p>All rights reserved 2022 - Funkoshop & copy;</p>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>       
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

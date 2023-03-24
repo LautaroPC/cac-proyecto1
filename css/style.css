@@ -372,6 +372,9 @@ b{
     position: relative;
     left: 45%;
 }
+.boton2{
+    margin: 5%;
+}
 /*-------------------------------------*/
 /* ITEMS - SECCION 1*/
 .main__items{
@@ -512,64 +515,153 @@ b{
 .card-boton:hover{
     background-color: #1D84B5;
 }
-
-
+/* ----------------- MAIN LOGIN -----------------------*/
 .main__login{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    background-image: url(../multimedia/login-fondo.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 88%;
-    padding:5% 15%;
-    background-position: 0 -20px;
+    margin:3%;
 }
 .form__login{
-    display: flex;
-    flex-direction: column;
     border: 2px solid white;
     background-color:white;
-    opacity: 88%;
+    opacity: 88%; 
+}
+.form__login .login__parrafo{
+    font-family: 'Inter';
+    color:#197eae;
+    font-size: 18px;
+    font-weight: '500';
+    line-height: 17px;
+    letter-spacing: 0em;
+    margin-left: 15%;
+    margin-top: 2%;
+    padding-bottom: 3%;
     text-align: center;
-    margin:0;
+}
+.form-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 10%;
+}
+.form-nav p{
+    margin: 2% 0;
+    font-family: 'Inter';
+    font-size: 24px;
+    line-height: 29.05px;
+    letter-spacing: 0.12em;
+    color:black;
+    font-weight:bold;
+    display: flex;
+}
+.form-nav input{
+    border:none;
+    border-bottom: solid 3.5px red;
+    width: 220px;
+    font-size: 19px;
+}
+.form-subnav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    margin:5% 5% 5% 5%;
+    font-family: 'inter';
 }
 h6{
-    margin-bottom: 7%;
-    padding: 1%;
-    font-size: 50px;
+    height: 49px;
+    width: 100%;
     font-family: 'Raleway';
-    font-weight: bolder;
-    line-height: 54px;    
-    color:#1D84B5;
-    letter-spacing: 0.2em;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0.04em;
     text-align: center;
+    color:black;
+    padding-bottom: 2%;
 }
-.login1{
-    padding: 4% 4% 2% 4%;
-    margin-right: 5%;
-    border-radius: 7%;
+.boton-nav{
+    background-color: red;
+    color:white;
+    font-family: 'Inter';
+    font-size: 15px;
+    text-align: left;
+    padding: 2% 5%;
+    border-radius: 0;
+    margin: 0 5%;
 }
-.login2{
-    padding: 6% 7% 3% 7%;
-    margin-left: 8%;
-    border-radius: 8%;
+.boton-nav:hover{
+    background-color: red;
+    color:white;
 }
-.login1 input, textarea{
-    margin: 0 10% 7% 10%;
-    font-weight: bolder;
-    
+.bot-recordar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter';
+    font-size: 19px;
+    font-weight:500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#000000;
+    margin-left: 5%;
+    width: max-content;
 }
-.login2 input, textarea{
-    margin: 0 10% 10% 10%;
-    font-weight: bolder;
-    
+#recordarme{
+    text-align: center;
+    height: 16.274829864501953px;
+    width: 16.274829864501953px;
 }
-.login2 .card-boton{
-    padding: 6% 7.8%;
+.bot-recordar label{
+    padding-left: 8%;
 }
-
+/* ----------------- MAIN REGISTRO -----------------------*/
+.form__login .register-sub{
+    font-family: 'Raleway';
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: 0.04em;
+    text-align: right;
+    margin: 3% 0;
+}
+.form-regis{
+    padding: 1% 25.5%;
+}
+.bot-aceptar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0%;
+}
+.bot-aceptar label{
+    font-weight: bold;
+    padding-left: 5%;
+}
+.form-subregistro{
+    margin:2% 6% 0% 0%;
+}
+.letra{
+    margin:0;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#1D84B5;
+    margin-left: 3%;
+    width: max-content;
+}
+.boton-registrar{
+    padding: 1% 3%
+}
 
 
 
@@ -618,6 +710,131 @@ footer p {
 
 
 
-.boton2{
-    margin: 0;
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------- MAIN LOGIN -----------------------*/
+.main__login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:3%;
+}
+.form__login{
+    border: 2px solid white;
+    background-color:white;
+    opacity: 88%;  
+}
+.form__login .login__parrafo{
+    font-family: 'Inter';
+    color:#197eae;
+    font-size: 18px;
+    font-weight: '500';
+    line-height: 17px;
+    letter-spacing: 0em;
+    margin-left: 15%;
+    margin-top: 2%;
+    padding-bottom: 3%;
+    text-align: center;
+}
+.form-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 8%;
+}
+.form-nav p{
+    margin: 2% 0;
+    font-family: 'Inter';
+    font-size: 24px;
+    line-height: 29.05px;
+    letter-spacing: 0.12em;
+    color:black;
+    font-weight: bolder;
+}
+
+.form-nav input{
+    border:none;
+    border-bottom: solid 3.5px red;
+    width: 220px;
+    margin-left: 10%;
+    font-size: 19px;
+}
+
+.form-subnav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin:5% 0 5% 15%;
+    font-family: 'inter';
+}
+h6{
+    height: 49px;
+    width: 100%;
+    font-family: 'Raleway';
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color:black;
+    padding-bottom: 2%;
+}
+.boton-nav{
+    background-color: red;
+    color:white;
+    font-family: 'Inter';
+    font-size: 15px;
+    text-align: left;
+    padding: 2% 5%;
+    border-radius: 0;
+    margin: 0 5%;
+}
+.boton-nav:hover{
+    background-color: red;
+    color:white;
+}
+.bot-recordar{
+    font-family: 'Inter';
+    font-size: 19px;
+    font-weight:500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#000000;
+    margin-left: 5%;
+}
+#recordarme{
+    border-radius: 7px;
+    text-align: center;
+    height: 16.274829864501953px;
+    width: 16.274829864501953px;
+    border-radius: 3px;
+    border: 2px solid #1F1F1F;
+    background-position: 200px;
+}
+
+
+
+/* ------------ MAIN REGISTRO ------------- */
+.form__login p{
+    font-family: 'Raleway';
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: 0.04em;
+    text-align: right;
+    margin: 3% 0;
 }
