@@ -1,0 +1,54 @@
+/* ----------------- MAIN CONTACTO -----------------------*/
+.main__contacto{
+    padding:5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/fondocontacto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 88%;
+    background-position: 0 -20px;
+}
+.form__contacto{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10%;
+    border: 2px solid white;
+    padding: 4% 5% 2% 5%;
+    background-color: white;
+    opacity: 88%;
+}
+.form__contacto h4{
+    margin-bottom: 7%;
+    font-family: 'Inter';
+    letter-spacing: 0.2em;
+    color:#1D84B5;
+    font-weight: bolder;
+    padding: 1%;
+    font-stretch: 700;
+}
+.form__contacto input, textarea{
+    margin: 0 10% 7% 10%;
+    font-weight: bolder;
+}
+
+.contacto-boton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.contacto-boton input{
+    color:white;
+    background-color: #30343F;
+    border-radius: 30%;
+    padding: 4% 5%;
+    font-family: 'Inter';
+}
+.card-boton{
+    font-size: 12px;
+}
+.card-boton:hover{
+    background-color: #1D84B5;
+}
