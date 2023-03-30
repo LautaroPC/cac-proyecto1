@@ -1,10 +1,96 @@
-/* General */
-body{
-    margin: 0; 
+:root{
+    /* Paleta de colores */
+    --primario-solid:#FF3333;
+    --primario-900:rgba(255, 51, 51, 0.9);
+    --primario-500:rgba(255, 51, 51, 0.5);
+    --primario-300:rgba(255, 51, 51, 0.3);
+
+    --secundario-solid:#1D84B5; /*parrafo*/
+    --secundario-900:rgba(29, 132, 181, 0.9);
+    --secundario-500:rgba(29, 132, 181, 0.5);
+    --secundario-300:rgba(29, 132, 181, 0.3);
+
+    --terciario-solid: #1F1F1F; /* parrafo*/
+    --terciari-900:rgba(31, 31, 31, 0.9);
+    --terciari-500:rgba(31, 31, 31, 0.5);
+    --terciari-300:rgba(31, 31, 31, 0.3);
+
+    --cuarto-solid:#4F4F4F; /*parrafo*/
+    --quinto-solid: #111111; /*titulo*/
+    --sexto-solid: #333333; /*se usa mucho en los parrafos de las card dnd se venden los muñecos*/
+
+    --dark-solid:#30343F;
+    --light-solid:#FAFAFF;
+    --light-font-solid: #ffffff;
+    --input-color:#B9B9B9;
+    --form-color:#000000;
+   
+    /* Tipografia */
+    --primario-font: 'inter', sans-serif;
+    --secundario-font: 'Raleway', sans-serif;
+
+    /* Tamaño tipografico - Font-size */
+    --font-display: 4.6em;
+    --font-jumbo: 3.8em;
+    --font-xlarge:3em;
+    --font-large:2.4em;
+    --font-medium:1.8em;
+    --font-small:1.6em;
+    --font-xsmall:1.2em;
+
+    --font-navbarras:2em;
+    --font-h1:4.2em;
+    
+    /* Spacings */
+    --spacing-128: 12.8rem;
+    --spacing-68: 6.8rem;
+    --spacing-36: 3.6rem;
+    --spacing-28: 2.8rem;
+    --spacing-16: 1.6rem;
+    --spacing-12: 1.2rem;
+    --spacing-8: 0.8rem;
 }
-/* =============== HEADER =============== */
-header{
-    background-color: #30343F;
+
+/* General */
+*{
+    margin: 0; 
+    padding:0;
+    font-family: var(--primario-font);
+}
+html{
+    font-size:62.5%;
+}
+header, footer{
+    background-color: var(--dark-solid);
+    font-size: var(--font-navbarras);
+    font-family: var(--secundario-font);
+    font-weight: 500;
+    max-width:1440rem;
+}
+ul, ol{
+    list-style-type:none;
+    text-decoration: none;
+}
+a{
+    color:var(--light-font-solid);
+    text-decoration: none;
+    list-style-type:none;
+    line-height: 30px;
+    letter-spacing: 0em;
+    padding: 0 20px;
+    text-align: left;
+}
+a:hover{
+    color:var(--light-font-solid);
+}
+.containermain{
+    max-width:1220px;
+    margin:0 auto;
+}
+
+/* ========================= HEADER ========================= */
+/* Barra de navegación */
+header, .header__nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -12,72 +98,119 @@ header{
     padding: 0 5%;
     height: 144px;
 }
-a{
-    font-size: 20px;
-    letter-spacing: 0em;
-    padding: 0 20px;
-    color:#FFFFFF;
-    text-decoration: none;
-    font-family: 'Raleway';
-    line-height: 30px;
-    text-align: left;
-}
-a:hover{
-    list-style-type: none;
-    color:white
+/*cuando paso el mouse por sección de shop*/
+.dropdown-item:hover{
+    background-color:var(--secundario-solid);
+    color: var(--light-font-solid);
 }
 
-/*logo*/
-.header__logo{
-    height: 65.19194793701172px;
-    width: 372px;
-    border-radius: 0px;  
+/* ========================= MAIN ========================= */
+/* general */
+main{
+    background-color: var(--light-font-solid);
+    font-family: 'inter', sans-serif;  
+    color: var(--color-primario);
 }
-.img__car{
-    height: 24.426172256469727px;
-    width: 32px;
-    left: 0.70068359375px;
-    top: 0.61572265625px;
-    border-radius: 0px;
+h1{
+    font-family: var(--secundario-font);
+    font-size: var(--font-h1);
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color:var(--terciario-solid);
+    padding: 2% 0;
 }
-/*navegador en header*/
-.header__nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+h2{
+    font-family: var(--secundario-font);
+    font-size: var(--font-display);
+    font-weight: 700;
+    line-height: 54px;
+    letter-spacing: 0em;
 }
-.header__nav li{
-    list-style-type: none;
-}
-.dropdown-item{
+b{
+    font-family: 'Inter';
+    font-size: var(--font-small);
+    line-height: 19px;
     font-weight: 500;
 }
-.nav__item{
-    color:black;
-    font-weight: bolder;
-    text-align: right;
+hr{
+    width: 645px;
+    opacity: 100%;
+    border: 3px solid var(--primario-solid);
+    height: 0px;
+    left: 110px;
+    top: 949.5px;
+    margin: 4% 0 8% 0;
 }
-.dropdown-item:hover{
-    background-color:#1D84B5;
-    color: white;
-    font-weight: bolder;
+form{
+    font-family: var(--primario-font);   
+    font-weight: 400; 
+    color:var(--form-colo);
 }
-.nav__barra{
-    padding: 0;
-    margin: 0;
-    width: auto;
+form input{
+    font-size: var(--font-small);
+    border:none;
+    color:var(--input-color);
+    padding-left: 1%;
 }
-.card-item{
-    height: 40px;    
+form p{
+    font-size: var(--font-large);
 }
-.dropdown-item{
+/* ------------ General del formulario login y registro -------------*/
+.main-identidad{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5% 0;
+}
+.form-identidad input{
+    border-bottom: 2px solid var(--primario-solid);
+}
+.identidad-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.identidad-card p{
+    margin: 2% 1%;
+    letter-spacing: 0.12em;
+}
+.identidad-cardnav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
+    margin:5%;
+}
+.identidad-card input{
+    width: 208.6px;
+    padding-left: 2%;
+    color:var(--input-color)
+}
+.boton-red{
+    height: 39.06px;
+    width: 103px;
+    border-radius: 0px;
+    background-color: red;
+    color:var(--light-font-solid);
+    font-size: var(--font-xsmall);
     text-align: center;
 }
-/* =============== MAIN =============== */
-main{
-    background-color: #FFFFFF;  
+/* ------------ General las cajas que tienen los muñecos en index, shop e items -------------*/
+.box-nuevo{
+    background-color: red;
+    color:var(--light-font-solid);
+    position: relative;
+    height: 28px;
+    width: 94.12741088867188px;
+    font-size: var(--font-xsmall);
+    text-align: center;
+    padding-top: 6px;
+    margin-right:0;
 }
-/*-------------------------------------*/
 /* INDEX - SECCION 1 */
 .index__seccion1{
     background-image:url(../img/funkos-banner.webp);
@@ -86,42 +219,36 @@ main{
     background-position: 0px -330px;
     background-repeat: no-repeat;
     zoom:130%;
-    padding: 7.3% 7%; 
+    padding: 7.3% 10%; 
     background-blend-mode: soft-light;
     backdrop-filter: blur(80px);
 }
-#p_nuevoingreso{
-    font-family: 'Raleway';
-    font-size: 38px;
+.index__seccion1 p {
+    font-family: var(--secundario-font);
+    font-size: var(--font-jumbo);
     font-weight: 700;
     line-height: 45px;
-    letter-spacing: 0em;
-    text-align: left;
-    color:white;
+    color:var(--light-font-solid);
 }
-.index__seccion1 p{
-    font-family: 'Raleway';
-    font-size: 18px;
+#p_nuevoingreso{
+    font-size: var(--font-medium);
     font-weight: 400;
     line-height: 21px;
-    letter-spacing: 0em;
-    text-align: left;
-    color:white;
+    padding-bottom: 3%;
 }
 .index__seccion1 a{
+    font-family: var(--primario-font);
+    font-size: 2em;
     color:black;
-    background-color: white;
+    background-color: var(--light-font-solid);
     border-radius: 40px;
-    padding: 8px 63px;
-    border-radius: 'nullpx';
+    padding: 8px 55px;
 }
-
-/* INDEX - SECCION 2 - COLECCION*/
+/* INDEX - SECCION 2 */
 .index__seccion2{
     display: flex;
     flex-direction: column;
-    padding: 5% 7%; 
-    margin: 0 2%; 
+    align-items: center;
 }
 .coleccion__card{
     display: flex;
@@ -129,607 +256,325 @@ main{
     justify-content: space-between;
     align-items: center;
 }
-hr{
-    width: 645px;
-    opacity: 100%;
-    border: 3px solid #FF3333;
-    height: 0px;
-    left: 110px;
-    top: 949.5px;
-    border-radius: 'undefinedpx';
-    margin: 6% 0 8% 0;
-}
-#p_index{
-    width: 441px;
-    font-family: 'Raleway';
-    font-size: 46px;
+.index-titulo{
+    font-family: var(--secundario-font);
+    font-size: var(--font-display);
+    font-weight: 500;
     line-height: 54px;
-    color:black;
+    color:var(--sexto-solid);
+    width: 441px;
 }
-.coleccion__card p{
-    height: 56px;
+.index-parrafo{
+    font-family: var(--secundario-font);
+    font-size: var(--font-large);
+    font-weight: 400;
+    line-height: 29px;
+    color:var(--cuarto-solid);  
+    margin-top: 2%;
+    margin-bottom: 0;
     width: 458px;
-    font-family: 'Raleway';
-    font-size: 24px;
-    line-height: 28px;
-    color: #4F4F4F;
-    margin-top: 1% 0;
 }
 .coleccion__card a{
-    font-family: 'Inter';
-    font-size: 24px;
+    font-family: var(--primario-font);
+    font-size: var(--font-large);
+    font-weight: 500;
+    text-align: center;
     line-height: 29px;
     color:white;
-    background-color: #30343F;
+    background-color: var(--dark-solid);
     border-radius: 40px;
-    padding: 22px 55px;
-    font-style: medium;
+    padding: 15px 50px;
 }
-.card__img{
-    height: 650px;
-    width: 650px;
-    position: relative;
-    left: -65px;
-    top: 0px;
+.index-img{
+    height: 600px;
+    width: 600px;
 }
-.card__img-op{
-    height: 650px;
-    width: 650px;
-    position: relative;
-    left: 35px;
-    top: 10px;
-}
-/* INDEX - SECCION 3 - lanzamientos*/
+/* INDEX - SECCION 3 */
 .index__seccion3{
-    padding: 0 7%;
-    margin: 0 2%; 
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 4%;
 }
-.box__card{
+.index-lanzamientos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+/* -------------------------- LOGIN ----------------------------- */
+.login-box{
+    width: 400.87px;
+}
+.parrafo-login{
+    color:var(--secundario-solid);
+    font-size: 1.8em;
+    line-height: 1.7rem;
+    letter-spacing: 0em;
+    margin-left: 15%;
+    text-align: center;
+}
+.bot-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-medium);
+    font-weight:400;
+    line-height: 22px;
+    color:var(--form-colo);
+}
+.bot-box label{
+    padding-left: 8%;
+}
+/* -------------------------- REGISTRO ----------------------------- */
+.parrafo-registro{
+    font-family: var(--secundario-font); 
+    font-size: 3.2em;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: 0.04em;
+    text-align: center;
+}
+.registro-box{
+    width: 500.85px;
+}
+.bot-aceptar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0%;
+}
+.bot-aceptar label{
+    font-size: var(--font-medium);
+    color:var(--form-colo);
+    padding-left: 10px;
+}
+.bot-aceptar label b{
+    font-family: var(--primario-font); 
+    font-size: 1.8rem;
+    font-weight:400;
+    color:var(--secundario-solid);
+}
+/* -------------------------- SHOP ----------------------------- */
+/* SHOP - SECCION 1 */
+.main__shop{
+    max-width: 1220px;
+    padding: 5% 0;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--primario-font);   
+}
+.shop-secciones{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-h2{
-    font-family: 'Raleway';
-    font-size: 46px;
-    font-weight: 700;
-    line-height: 54px;
-    letter-spacing: 0em;
-}
-.card__sup{
-    background-color: red;
-    color:white;
-    position: relative;
-    height: 30px;
-    width: 96.12741088867188px;
-    left: 264px;
-    top: 30px;
-}
-.card_p{
-    font-family: 'Inter';
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 17px;
-    letter-spacing: 0em;
-    text-align: center;
-    padding-top: 6px;
-}
-.cards__img{
-    height: 352px;
-    width: 359.9664611816406px;
-    z-index: -1;
-}
-.card__titulo{
-    font-family: 'Inter';
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 17px;
-}
-.card__sub{
-    font-family: 'Inter';
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 22px;
-}
-.card__precio{
-    font-family: 'Inter';
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
-}
-.card__pago{
-    font-family: 'Inter';
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 15px;
-    color:#1D84B5;
-    padding-bottom: 20%;
-}
-/*-------------------------------------*/
-/* SHOP - SECCION 1 */
-.p_shop{
-    font-family: 'Inter';
-    font-size: 24px;
-    line-height: 29px;
-    font-weight: bolder; 
-    margin-bottom: 0;
-}
-b{
-    font-family: 'Inter';
-    font-size: 16px;
-    line-height: 19px;
-    font-weight: bolder;
-}
-.main__shop{
-    display: flex;
-    flex-direction: column;
-    margin: 2% 0;
-}
-.shop{
-    display: flex;
-    flex-direction: row;
-}
-.shop__form{
-    padding: 7% 7%;
-}
 .form__seccion{
     padding-bottom: 8%;
 }
-.form__seccion input{
+.parrafo-shop{  
+    font-size: var(--font-large);
+    line-height: 29.05px;
+    font-weight: 500; 
+    margin-bottom: 0;
+}
+/* para seleccionar el orden */
+.box-shop{
     padding: 7px;
     border-radius: 7px;
-    font-size: 20px;
-    color:#B9B9B9;
-    height: 44.284820556640625px;
-    width: 243.03369140625px;
+    font-size: 2.0em;
+    color: var(--input-color);
     margin: 2% 0;   
+    border:2px solid var(--dark-solid);
+    width:243.03px;
+    height: 44.28px
 }
-.form__seccion .precio__cuadro{
+.form__seccion .precio-box{
+    font-size: 2em;
+    letter-spacing: 0em;
+    text-align: center;    
     width: 60px;
     height: 30px;
-    border: 2px solid black;
+    border: 2px solid var(--form-color);
     border-radius: 7px;
-    margin: 0 9px;
-    font-family: 'Inter';
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 24px;
-    color:#B9B9B9;
-    opacity: 100%;
-    text-align: center;
+    margin: 3% 9px 0 9px;
 }
-.form__seccion label{
-    font-family: 'Inter';
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 22px;
-}
-#orden__sub{
-    border-radius: 7px;
-    font-size: 18px;
-    font-family: 'Inter';
-    font-weight: 500;
-    padding: 12px 6px;
-    border: 2px solid black;
-    color:#8b8181;
-    height: 44.284820556640625px;
-    width: 243.03369140625px;
-    margin: 2% 0;
-}
-.card__cuadro{
+/* para filtrar */
+.box-filtro{
     display: flex;
     flex-direction: row;
     justify-content: left;
     align-items: left;
     padding: 0 20px;
 }
-.filtrar__sub{
-    border:2px solid black;
+.form__seccion .box-filtro input{
+    border:2px solid var(--dark-solid);
+    height: 24px;
+    width: 24px;
+    margin: 2% 0;
 }
-
-.card__cuadro .filtrar__sub{
-    height: 23px;
-    width: 23px;
-}
-.card__cuadro label{
+.box-filtro label{
     height: 22px;
     padding: 3%;
     font-weight:600;
 }
-
-/* SHOP - SECCION 2 */
+.form__seccion label{
+    font-size: var(--font-medium);
+    font-weight: 500;
+    line-height: 22px;
+}
+/* SHOP - SECCION 2*/
 .seccion__lanzamientos{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    padding-top: 5%;
     position: relative;
-    left: -75px;
     margin-bottom: 0;
 }
-.shop__img{
-    height: 366px;
-    width: 363.00836181640625px;
+.box-muñeco{
+    height: 512px;
+    width: 304.01px;
+    border-radius: 0px;
+    margin:0 3px;
 }
-.shop__sup{
-    background-color: red;
-    color:white;
-    position: relative;
-    height: 30px;
-    width: 96.12741088867188px;
-    left: 252px;
-    top: 30px;
+.box-nuevo-shop{
+    left: 210px;
+    top: 28px;
 }
-.shop__pago{
-    font-family: 'Inter';
-    font-size: 12px;
+.shop-img{
+    height: 352px;
+    width: 304.01px;
+}
+.box-muñeco .card-titulo{
+    font-size: 1.4em;
+    font-weight: 500;
+    line-height: 17px;
+}
+.box-muñeco .card-sub{
+    font-size: var(--font-medium);
     font-weight: 700;
-    line-height: 15px;
-    color:#1D84B5;
-    padding-bottom: 3%;
+    line-height: 22px;
 }
-.img__boton2{
+.box-muñeco .card-precio{
+    font-size: 1.6em;
+    font-weight: 400;
+    line-height: 19px;
+}
+.box-muñeco .card-pago{
+    font-size: var(--font-xsmall);
+    font-weight: 700;
+    color:var(--secundario-solid);
+    padding-bottom: 20%;
+}
+.img-boton-numerico{
     width: 25%;
     position: relative;
     left: 45%;
 }
-.boton2{
-    margin: 5%;
-}
-/*-------------------------------------*/
-/* ITEMS - SECCION 1*/
-.main__items{
-    padding: 3% 7%;
-    margin: 0 2%; 
+.items__lanzamientos{
     display: flex;
     flex-direction: column;
+}
+/* -------------------------- ITEMS ----------------------------- */
+/* ITEMS - SECCION 1 */
+.main__items{
+    font-family: var(--primario-font); 
+    padding: 5% 0; 
+    display: flex;
+    flex-direction:column;
     align-content: center;
     justify-content: center;
 }
 .items__card{
     display: flex;
     flex-direction: row;
-    align-content: center;
-    justify-content: center;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 4%;
 }
-.items__img{
+.funko-img{
     height: 550px;
     width: 550px;
 }
 .seccion__items{
-   margin-top: 7%; 
-   margin-left: 5%;
+    margin: 0 5%;
 }
-.items__titulo{
-    height: 19px;
-    width: 111.3209228515625px;
-    left: 726.74560546875px;
-    top: 326.6346435546875px;
-    border-radius: 'undefinedpx';
-    color:#333333;
-    font-family: 'Inter';
-    font-size: 16px;
+.items-titulo{
+    font-size: var(--font-small);
     font-weight: 500;
     line-height: 19px;
-    letter-spacing: 0em;
-    text-align: left;
+    color:var(--sexto-solid);
 }
-.items__sub{
-    height: 46px;
-    width: 576.84375px;
-    font-family: 'Inter';
-    font-size: 38px;
+.items-sub{
+    font-size: var(--font-jumbo);
     font-weight: 700;
     line-height: 46px;
-    letter-spacing: 0em;
-    color:#111111;
+    color:var(--quinto-solid);
 }
-.items__parrafo{
-    height: 58px;
-    width: 570.705078125px;
-    font-family: 'Inter';
-    font-size: 24px;
+.items-parrafo{
+    font-size: var(--font-large);
     font-weight: 400;
     line-height: 29px;
-    letter-spacing: 0em;
-    color:#333333;        
+    color:var(--sexto-solid);     
 }
-.items__precio{
-    height: 46px;
-    width: 210.52294921875px;
-    font-family: 'Inter';
-    font-size: 38px;
+.items-precio{
+    font-size: var(--font-jumbo);
     font-weight: 400;
     line-height: 46px;
-    letter-spacing: 0em;
-    color:#333333;  
+    color:var(--sexto-solid);
 }
-.items__boton{
-    margin-bottom: 3%;    
+.items-boton{
+    margin-bottom: 3%;
+    width: 50%;    
 }
-.items__pago{
-    height: 17px;
-    width: 333.197021484375px;
-    font-family: 'Inter';
-    font-size: 14px;
+.items-pago{
+    font-size: 1.4em;
     font-weight: 700;
     line-height: 17px;
-    letter-spacing: 0em;
-    color:#1D84B5;
+    color:var(--secundario-solid);
 }
-
-/* ITEMS - SECCION 2*/
-.main__items .items__lanzamientos{
-    margin-top: 10%;
-}
-/* ----------------- MAIN LOGIN ----------------------- */
-.main__login{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin:3%;
-}
-.form__login{
-    border: 2px solid white;
-    background-color:white;
-    opacity: 88%; 
-}
-.form__login .login__parrafo{
-    font-family: 'Inter';
-    color:#197eae;
-    font-size: 18px;
-    font-weight: '500';
-    line-height: 17px;
-    letter-spacing: 0em;
-    margin-left: 15%;
-    margin-top: 2%;
-    padding-bottom: 3%;
-    text-align: center;
-}
-.form-nav{
+/* ITEMS - SECCION 2 */
+.box-lanzamiento{
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
-    padding: 2% 10%;
 }
-.form-nav p{
-    margin: 2% 0;
-    font-family: 'Inter';
-    font-size: 24px;
-    line-height: 29.05px;
-    letter-spacing: 0.12em;
-    color:black;
-    font-weight:bold;
-    display: flex;
+.items-img{
+    height: 352px;
+    width: 358.57px;
 }
-.form-nav input{
-    border:none;
-    border-bottom: solid 3.5px red;
-    width: 220px;
-    font-size: 19px;
-}
-.form-subnav{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:center;
-    margin:5% 5% 5% 5%;
-    font-family: 'inter';
-}
-h1{
-    font-family: 'Raleway';
-    font-size: 42px;
-    font-weight: 700;
-    line-height: 49px;
-    letter-spacing: 0.04em;
-    text-align: center;
-    color:black;
-    padding-bottom: 2%;
-}
-.boton-nav{
-    height: 45.06px;
-    width: 113px;
-    border-radius: 0px;
-    margin: 0 5%;
-    padding: 0%;
-    background-color: red;
-    color:white;
-    font-family: 'Inter';
-    font-size: 15px;
-    text-align: center;
-}
-.boton-nav:hover{
-    background-color: red;
-    color:white;
-}
-.bot-recordar{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Inter';
-    font-size: 19px;
-    font-weight:500;
-    line-height: 22px;
-    letter-spacing: 0em;
-    text-align: left;
-    color:#000000;
-    margin-left: 5%;
-    width: max-content;
-}
-#recordarme{
-    text-align: center;
-    height: 16.274829864501953px;
-    width: 16.274829864501953px;
-}
-.bot-recordar label{
-    padding-left: 8%;
+.box-nuevo-items{
+    left: 265px;
+    top: 28px;
 }
 
-/* ----------------- MAIN REGISTRO ----------------------- */
-.form__login .register-sub{ 
-    font-family: 'Raleway';
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 38px;
-    letter-spacing: 0.04em;
-    text-align: right;
-    margin: 3% 0;
-}
-.form-regis{
-    padding: 1% 25.5%;
-}
-.bot-aceptar{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-left: 0%;
-}
-.bot-aceptar label{
-    font-weight: bold;
-    padding-left: 5%;
-}
-.form-subregistro{
-    margin:2% 6% 0% 0%;
-}
-.registro-letra{
-    margin:0;
-    font-family: 'Inter';
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 22px;
-    letter-spacing: 0em;
-    text-align: left;
-    color:#1D84B5;
-    margin-left: 3%;
-    width: max-content;
-}
-/* ----------------- MAIN CREAR ----------------------- */
-.main__diseño1{
-    padding: 5% 7%; 
-}
-.titulo_crearitem{
-    text-align: left;
-    padding-bottom: 2%;
-
-}
-.p_crearitem{
-    font-family: 'Inter';
-    font-size: 24px;
-    font-weight: 300;
-    letter-spacing: 0.04em;
-    text-align: left;
-    color:#000000;
-}
-.crear__seccion1{
-    display: flex;
-    flex-direction: row;
-    margin: 2.5% 0;
-}
-.crear__seccion2{
-    display: flex;
-    flex-direction: row;
-}
-.crear__barra1{
-    height: 44.284820556640625px;
-    width: 243.03369140625px;
-    border-radius: 6px;
-    margin: 0 20px;
-    color: #B9B9B9;
-}
-.crear__barra2{
-    height: 44px;
-    width: 346px;
-    border-radius: 6px;
-    margin: 0 25px;
-    color: #B9B9B9;
-}
-.crear__seccion1 input{
-    border:none;
-    border-bottom: solid 3.5px red;
-    margin: 0 20px;
-    height: 30px;
-    font-family: 'Inter';
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 22px;
-    letter-spacing: 0.04em;
-}
-.crear__input1{
-    width: 302px;
-}
-.crear__input2{
-    width: 130px;
-}
-.crear__input3{
-    width: 55px;
-    text-align: center;
-}
-.crear__seccion1 button{
-    Width: 125px;
-    height: 26px;
-    font-size: 14px;
-    margin: 5px 5px;
-}
-.crear__parrafo{
-    padding-top: 5px;
-}
-.boton-items{
-    height: 44.333621978759766px;
-    width: 175px;
-    border-radius: 0px;
-    padding:0;
-    margin: 0 5%;
-    background-color: red;
-    color:white;
-    font-family: 'Inter';
-    font-size: 15px;
-    text-align: center;
-    font-weight: bolder;
-}
-.boton-items:hover{
-    background-color: red;
-    color:white;
-}
-
-
-/* =============== FOOTER =============== */
+/* ========================= FOOTER ========================= */
 footer{
     height: 343px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
-    background-color: #30343F;
+    align-content: end;
+    padding: 5% 5% 0% 5%;
 }
+/* sección de los items para navegar*/
 .footer__nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 5% 7% 0% 7%;
+    align-items: end;
 }
-.footer__items{
+ .footer__items{
     padding: 0;
-    margin-bottom: 0%;
 }
 .footer__items li{
-    list-style: none;
-    text-align: left;
     padding: 2% 0;
 }
 footer p {
-    color:#FFFFFF;
-    font-family: 'Raleway';
+    color:var(--light-font-solid);
+    font-family: var(--secundario-font);
     text-align: center;
-    margin:2% 0;
-
-}
-.footer__img{
-    margin-top:5%;
-    margin-right: 2%;
-    margin: 5% 2% 1% 0;
-}
+} 

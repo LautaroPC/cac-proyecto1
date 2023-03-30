@@ -38,143 +38,142 @@
             </ul>
         </div>
     </header>
-    <main class="main__shop">
-        <section class="shop">
-            <section class="shop__form">
+    <main class="containermain main__shop">
+        <div class="shop-secciones">
+            <section class="shop__formulario">
                 <form action="">
                     <div class="form__seccion">
-                        <p class="p_shop">BUSCAR</p>
-                        <input type="text" placeholder="item o categoria">
+                        <p class="parrafo-shop">BUSCAR</p>
+                        <input class="box-shop" type="text" placeholder="item o categoria">
                     </div>
                     <div class="form__seccion">
-                        <p class="p_shop">ORDENAR POR</p>
-                        <select name="" id="orden__sub">
+                        <p class="parrafo-shop">ORDENAR POR</p>
+                        <select name="" class="box-shop">
                             <option value="Mayor a menor">Mayor a menor</option>
                             <option value="Menor a mayor">Menor a mayor</option>
                             <option value="Destacados">Destacados</option>
                         </select>
                     </div>
                     <div class="form__seccion">
-                        <p class="p_shop">PRECIO</p>
-                        <b>MIN</b><input class="precio__cuadro" type="text" placeholder="0"><b> - MAX</b><input
-                            class="precio__cuadro" type="text" placeholder="0">
+                        <p class="parrafo-shop">PRECIO</p>
+                        <b>MIN</b><input class="precio-box" type="text" placeholder="0"><b> - MAX</b><input class="precio-box" type="text" placeholder="0">
                     </div>
                     <div class="form__seccion">
-                        <p class="p_shop">FILTRAR</p>
-                        <div class="card__cuadro">
-                            <input class="filtrar__sub" type="checkbox" name="filtrar" id="Nuevo" value="Nuevo">
+                        <p class="parrafo-shop">FILTRAR</p>
+                        <div class="box-filtro">
+                            <input class="filtrar-box" type="checkbox" name="filtrar" id="Nuevo" value="Nuevo">
                             <label for="Nuevo">NUEVOS</label>
                         </div>
-                        <div class="card__cuadro">
-                            <input class="filtrar__sub" type="checkbox" name="filtrar" id="Oferta" value="Oferta">
+                        <div class="box-filtro">
+                            <input class="filtrar-box" type="checkbox" name="filtrar" id="Oferta" value="Oferta">
                             <label for="Oferta">OFERTAS</label>
                         </div>
-                        <div class="card__cuadro">
-                            <input class="filtrar__sub" type="checkbox" name="filtrar" id="Edicion-especial"
+                        <div class="box-filtro">
+                            <input class="filtrar-box" type="checkbox" name="filtrar" id="Edicion-especial"
                                 value="Edicion-especial">
                             <label for="Edicion-especial">EDICIÓN ESPECIAL</label>
                         </div>
-                        <div class="card__cuadro">
-                            <input class="filtrar__sub" type="checkbox" name="filtrar" id="Favoritos" value="Favoritos">
+                        <div class="box-filtro">
+                            <input class="filtrar-box" type="checkbox" name="filtrar" id="Favoritos" value="Favoritos">
                             <label for="Favoritos">FAVORITOS</label>
                         </div>
                     </div>
                 </form>
             </section>
             <section class="seccion__lanzamientos">
-                <div class="muñecos__lanz">
-                    <div class="shop__sup">
-                        <p class="card_p">NUEVO</p>
+                <div class="box-muñeco">
+                    <div class="box-nuevo box-nuevo-shop">
+                        <p>NUEVO</p>
                     </div>
-                    <img class="shop__img" src="../img/star-wars/trooper-1.webp" alt="">
-                    <p class="card__titulo">STAR WARS</p>
-                    <p class="card__sub">STORMTROOPER LIGHTSABER</p>
-                    <p class="card__precio">$ 1799,99.-</p>
-                    <p class="shop__pago">3 CUOTAS SIN INTERÉS</p>
+                    <img class="shop-img" src="../img/star-wars/trooper-1.webp" alt="">
+                    <p class="card-titulo">STAR WARS</p>
+                    <p class="card-sub">STORMTROOPER LIGHTSABER</p>
+                    <p class="card-precio">$ 1799,99.-</p>
+                    <p class="card-pago">3 CUOTAS SIN INTERÉS</p>
                 </div>
-                <div class="muñecos__lanz">
-                    <div class="shop__sup">
-                        <p class="card_p">NUEVO</p>
+                <div class="box-muñeco">
+                    <div class="box-nuevo box-nuevo-shop">
+                        <p>NUEVO</p>
                     </div>
-                    <img class="shop__img" src="../img/pokemon/pidgeotto-1.webp" alt="">
-                    <p class="card__titulo">POKEMON</p>
-                    <p class="card__sub">PIDGEOTTO</p>
-                    <p class="card__precio">$ 1799,99.-</p>
-                    <p class="shop__pago">3 CUOTAS SIN INTERÉS</p>
+                    <img class="shop-img" src="../img/pokemon/pidgeotto-1.webp" alt="">
+                    <p class="card-titulo">POKEMON</p>
+                    <p class="card-sub">PIDGEOTTO</p>
+                    <p class="card-precio">$ 1799,99.-</p>
+                    <p class="card-pago">3 CUOTAS SIN INTERÉS</p>
                 </div>
-                <div class="muñecos__lanz">
-                    <div class="shop__sup">
-                        <p class="card_p">NUEVO</p>
+                <div class="box-muñeco">
+                    <div class="box-nuevo box-nuevo-shop">
+                        <p>NUEVO</p>
                     </div>
-                    <img class="shop__img" src="../img/harry-potter/luna-1.webp" alt="">
-                    <p class="card__titulo">HARRY POTTER</p>
-                    <p class="card__sub">LUNA LOVEGOOD LION MASK</p>
-                    <p class="card__precio">$ 1799,99.-</p>
-                    <p class="shop__pago">3 CUOTAS SIN INTERÉS</p>
+                    <img class="shop-img" src="../img/harry-potter/luna-1.webp" alt="">
+                    <p class="card-titulo">HARRY POTTER</p>
+                    <p class="card-sub">LUNA LOVEGOOD LION MASK</p>
+                    <p class="card-precio">$ 1799,99.-</p>
+                    <p class="card-pago">3 CUOTAS SIN INTERÉS</p>
                 </div>
-                <div class="muñecos__lanz">
-                    <div class="shop__sup">
-                        <p class="card_p">NUEVO</p>
+                <div class="box-muñeco">
+                    <div class="box-nuevo box-nuevo-shop">
+                        <p>NUEVO</p>
                     </div>
-                    <img class="shop__img" src="../img/star-wars/trooper-1.webp" alt="">
-                    <p class="card__titulo">STAR WARS</p>
-                    <p class="card__sub">STORMTROOPER LIGHTSABER</p>
-                    <p class="card__precio">$ 1799,99.-</p>
-                    <p class="shop__pago">3 CUOTAS SIN INTERÉS</p>
+                    <img class="shop-img" src="../img/star-wars/trooper-1.webp" alt="">
+                    <p class="card-titulo">STAR WARS</p>
+                    <p class="card-sub">STORMTROOPER LIGHTSABER</p>
+                    <p class="card-precio">$ 1799,99.-</p>
+                    <p class="card-pago">3 CUOTAS SIN INTERÉS</p>
                 </div>
-                <div class="muñecos__lanz">
-                    <div class="shop__sup">
-                        <p class="card_p">NUEVO</p>
+                <div class="box-muñeco">
+                    <div class="box-nuevo box-nuevo-shop">
+                        <p>NUEVO</p>
                     </div>
-                    <img class="shop__img" src="../img/pokemon/pidgeotto-1.webp" alt="">
-                    <p class="card__titulo">POKEMON</p>
-                    <p class="card__sub">PIDGEOTTO</p>
-                    <p class="card__precio">$ 1799,99.-</p>
-                    <p class="shop__pago">3 CUOTAS SIN INTERÉS</p>
+                    <img class="shop-img" src="../img/pokemon/pidgeotto-1.webp" alt="">
+                    <p class="card-titulo">POKEMON</p>
+                    <p class="card-sub">PIDGEOTTO</p>
+                    <p class="card-precio">$ 1799,99.-</p>
+                    <p class="card-pago">3 CUOTAS SIN INTERÉS</p>
                 </div>
-                <div class="muñecos__lanz">
-                    <div class="shop__sup">
-                        <p class="card_p">NUEVO</p>
+                <div class="box-muñeco">
+                    <div class="box-nuevo box-nuevo-shop">
+                        <p>NUEVO</p>
                     </div>
-                    <img class="shop__img" src="../img/harry-potter/luna-1.webp" alt="">
-                    <p class="card__titulo">HARRY POTTER</p>
-                    <p class="card__sub">LUNA LOVEGOOD LION MASK</p>
-                    <p class="card__precio">$ 1799,99.-</p>
-                    <p class="shop__pago">3 CUOTAS SIN INTERÉS</p>
+                    <img class="shop-img" src="../img/harry-potter/luna-1.webp" alt="">
+                    <p class="card-titulo">HARRY POTTER</p>
+                    <p class="card-sub">LUNA LOVEGOOD LION MASK</p>
+                    <p class="card-precio">$ 1799,99.-</p>
+                    <p class="card-pago">3 CUOTAS SIN INTERÉS</p>
                 </div>
-                <div class="muñecos__lanz">
-                    <div class="shop__sup">
-                        <p class="card_p">NUEVO</p>
+                <div class="box-muñeco">
+                    <div class="box-nuevo box-nuevo-shop">
+                        <p>NUEVO</p>
                     </div>
-                    <img class="shop__img" src="../img/star-wars/trooper-1.webp" alt="">
-                    <p class="card__titulo">STAR WARS</p>
-                    <p class="card__sub">STORMTROOPER LIGHTSABER</p>
-                    <p class="card__precio">$ 1799,99.-</p>
-                    <p class="shop__pago">3 CUOTAS SIN INTERÉS</p>
+                    <img class="shop-img" src="../img/star-wars/trooper-1.webp" alt="">
+                    <p class="card-titulo">STAR WARS</p>
+                    <p class="card-sub">STORMTROOPER LIGHTSABER</p>
+                    <p class="card-precio">$ 1799,99.-</p>
+                    <p class="card-pago">3 CUOTAS SIN INTERÉS</p>
                 </div>
-                <div class="muñecos__lanz">
-                    <div class="shop__sup">
-                        <p class="card_p">NUEVO</p>
+                <div class="box-muñeco">
+                    <div class="box-nuevo box-nuevo-shop">
+                        <p>NUEVO</p>
                     </div>
-                    <img class="shop__img" src="../img/pokemon/pidgeotto-1.webp" alt="">
-                    <p class="card__titulo">POKEMON</p>
-                    <p class="card__sub">PIDGEOTTO</p>
-                    <p class="card__precio">$ 1799,99.-</p>
-                    <p class="card__pago">3 CUOTAS SIN INTERÉS</p>
+                    <img class="shop-img" src="../img/pokemon/pidgeotto-1.webp" alt="">
+                    <p class="card-titulo">POKEMON</p>
+                    <p class="card-sub">PIDGEOTTO</p>
+                    <p class="card-precio">$ 1799,99.-</p>
+                    <p class="card-pago">3 CUOTAS SIN INTERÉS</p>
                 </div>
-                <div class="muñecos__lanz mb-5">
-                    <div class="shop__sup">
-                        <p class="card_p">NUEVO</p>
+                <div class="box-muñeco mb-5">
+                    <div class="box-nuevo box-nuevo-shop">
+                        <p>NUEVO</p>
                     </div>
-                    <img class="shop__img" src="../img/harry-potter/luna-1.webp" alt="">
-                    <p class="card__titulo">HARRY POTTER</p>
-                    <p class="card__sub">LUNA LOVEGOOD LION MASK</p>
-                    <p class="card__precio">$ 1799,99.-</p>
-                    <p class="shop__pago">3 CUOTAS SIN INTERÉS</p>
+                    <img class="shop-img" src="../img/harry-potter/luna-1.webp" alt="">
+                    <p class="card-titulo">HARRY POTTER</p>
+                    <p class="card-sub">LUNA LOVEGOOD LION MASK</p>
+                    <p class="card-precio">$ 1799,99.-</p>
+                    <p class="card-pago">3 CUOTAS SIN INTERÉS</p>
                 </div>
             </section>
-        </section>
-        <img class="img__boton2" src="../img/boton2.JPG" alt="">
+        </div>
+         <img class="img-boton-numerico" src="../img/boton2.JPG" alt=""> 
     </main>
     <footer>
         <section class="footer__nav">

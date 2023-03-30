@@ -24,29 +24,32 @@
         </div>
         <div>
             <ul class="header__nav">
-                <li><a href="#">SALIR</a></li>
+                <li><a href="../index.html">SALIR</a></li>
             </ul>
         </div>
     </header>
-    <main class="main__login">
-        <form class="form__login" action="">
-            <h1>INGRESAR A MI CUENTA</h1>
-            <div class="form-nav">
-                <p class="email">Email:</p>
-                <input type="email" name="correo" placeholder="johndoe@correo.com">
-            </div>
-            <div class="form-nav contraseña">
-                <p class="contraseña">Contraseña:</p>
-                <input type="password" name="Contraseña" placeholder="*********">
-            </div>
-            <div class="form-subnav">
-                <input class="btn boton-nav " type="submit" value="Ingresar">
-                <div class="bot-recordar">
-                    <input type="checkbox" name="filtrar" id="recordarme" value="recordarme">
-                    <label for="recordarme">Recordarme</label>
+    <main class="containermain main-identidad">
+        <h1>INGRESAR A MI CUENTA</h1>
+        <form class="form-identidad" action="">
+            <div class="login-box">
+                <div class="identidad-card">
+                    <p class="email">Email:</p>
+                    <input type="email" name="correo" placeholder="johndoe@correo.com">
+                </div>
+                <div class="identidad-card">
+                    <p class="contraseña">Contraseña:</p>
+                    <input type="password" name="Contraseña" placeholder="*********">
+                </div>
+                <div class="identidad-cardnav">
+                    <input class="boton-red " type="submit" value="Ingresar">
+                    <div class="bot-box">
+                        <input type="checkbox" name="filtrar" id="recordarme" value="recordarme">
+                        <label for="recordarme">Recordarme</label>
+                    </div>
                 </div>
             </div>
-            <p class="login__parrafo mb-4">olvidé mi contraseña</p>
+            
+            <p class="parrafo-login mb-4">Olvidé mi contraseña</p>
         </form>
     </main>
     <footer>
