@@ -16,23 +16,46 @@
 </head>
 <body>
     <header>
-        <div>
-            <a href="../index.html"><img src="../img/branding/logo_light_horizontal.svg" class="header__logo" alt=""></a>
-        </div>
-        <div>
-            <ul class="header__nav">
-                <li class="dropdown"><a class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="shop.html">SHOP</a>
-                    <ul class="dropdown-menu">
-                        <li class="card-item"><a class="dropdown-item"  href="#">Harry Potter</a></li>
-                        <li class="card-item"><a class="dropdown-item" href="#">Star Wars</a></li>
-                        <li class="card-item"><a class="dropdown-item" href="#">Pokemon</a></li>
-                    </ul>
-                </li>
-                <li><a href="contacto.html">CONTACTO</a></li>
-                <li><a href="login.html">LOGIN</a></li>
-                <li><a href="compra.html"><img src="../img/icons/cart-icon.svg" class="img__car" alt=""></a></li>
-            </ul>
-        </div>
+        <nav class="navbar-expand-lg navbar">
+            <div class="header-navbar">
+                <div class="navbar-box">
+                    <a class="navbar-brand" href="../index.html"><img src="../img/branding/logo_light_horizontal.svg"
+                            class="header-logo" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="navbar-items">
+                        <div class="offcanvas-header">
+                            <h3 class="offcanvas-title" id="offcanvasDarkNavbarLabel">MENU</h3>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav">
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        SHOP
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Harry Potter</a></li>
+                                        <li><a class="dropdown-item" href="#">Star Wars</a></li>
+                                        <li><a class="dropdown-item" href="#">Pokemon</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="contacto.html">CONTACTO</a></li>
+                                <li class="dropdown"><a href="login.html">LOGIN</a></li>
+                                <li class="dropdown"><a href="shop.html"><img src="img/icons/cart-icon.svg" class="img__car" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
     <main class="main__contacto">
         <form class="form__contacto" action="">

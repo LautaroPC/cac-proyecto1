@@ -90,15 +90,35 @@ a:hover{
 
 /* ========================= HEADER ========================= */
 /* Barra de navegación */
-header, .header__nav{
+header{
+    padding: 0 5%;
+    height: 144px;
+}
+header nav{
+    margin: 0%;
+    padding: 0%;
+}
+.navbar{
+    display: block;
+}
+.header-navbar{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 5%;
-    height: 144px;
+    position: relative;
+    top: 32.5px;
+}
+.navbar-items{
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 /*cuando paso el mouse por sección de shop*/
+.dropdown-item{
+    font-size: var(--font-small);
+    color: var(--dark-solid);
+}
 .dropdown-item:hover{
     background-color:var(--secundario-solid);
     color: var(--light-font-solid);
@@ -581,11 +601,70 @@ footer p {
 
 
  @media screen and (max-width:768px){
-    /*header, .header__nav{
+    /* ========================= HEADER ========================= */
+    header{
+        padding: 0 5%;
+        height: 90px;
+    }
+    h3{
+        font-size: 1.4em;  
+        color:var(--light-font-solid);
+        font-weight: bolder;
+        padding-top: 2%;
+        padding-left: 4%; 
+        border-bottom: 2px solid var(--light-font-solid);
+        width: 100%;
+    }
+    a{
+        color:var(--light-font-solid); 
+        font-size: 18px;
+    }
+    /*cuadro del menu en mobible */
+    .navbar-toggler{
+        color:black;
+        background-color: white;
+    }
+    .header-navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2%;
+        position: relative;
+        top: 25.5px;
+    }
+    .header-logo{
+        width: 70%;
+        zoom:100%;
+    }     
+    .navbar-box span {
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        vertical-align: middle;
+        background-image: var(--bs-navbar-toggler-icon-bg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+    .navbar-box span{
+        color:var(--light-font-solid);
+    }
+    .navbar-items{
+        background-color: var(--dark-solid);
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: start;
+        align-items: stretch;
+        padding: 2%;
+        color:var(--light-font-solid);
+    }
+    .dropdown{
+        padding: 2% 0;
+        font-weight: bold;
+    }
+    .navbar-box{
+        display: flex;
     }
     /* ========================= MAIN ========================= */
     /* ------------------------ REGISTRO ------------------------- */

@@ -18,15 +18,33 @@
 
 <body>
     <header>
-        <div>
-            <a href="../index.html"><img src="../img/branding/logo_light_horizontal.svg" class="header__logo"
-                    alt=""></a>
-        </div>
-        <div>
-            <ul class="header__nav">
-                <li><a href="#">SALIR</a></li>
-            </ul>
-        </div>
+        <nav class="navbar-expand-lg navbar">
+            <div class="header-navbar">
+                <div class="navbar-box">
+                    <a class="navbar-brand" href="../index.html"><img src="../img/branding/logo_light_horizontal.svg"
+                            class="header-logo" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="navbar-items">
+                        <div class="offcanvas-header">
+                            <h3 class="offcanvas-title" id="offcanvasDarkNavbarLabel">MENU</h3>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav">
+                                <li class="dropdown"><a href="../index.html">SALIR</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
     <main class="main__diseño1">
         <form action="">
