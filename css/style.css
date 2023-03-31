@@ -766,18 +766,21 @@ footer p {
         padding-bottom: 0;
     }
     .main-identidad{
-        padding: 1.5% 0;
+        padding: 3% 0;
     }
     /* ------------ General del formulario login y registro -------------*/
     form p {
         font-size: var(--font-small);
+    }
+    .form-identidad{
+        padding: 2% 0;
     }
     .identidad-card {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        padding-bottom: 2%;
+        padding: 2% 0;
     }
     .identidad-cardnav {
         display: flex;
@@ -786,6 +789,7 @@ footer p {
         justify-content: space-evenly;
         margin: 5% 0;
     }
+    
     /* ------------------------ INGRESAR ------------------------- */ 
     .login-box {
         width: 378.85px;
