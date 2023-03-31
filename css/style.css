@@ -835,6 +835,7 @@ footer p {
         width: 80%;
         position: unset;
         padding-bottom: 5%;
+        padding-top: 8%;
     }
     /* ------------------------ ITEMS ------------------------- */
     
@@ -890,10 +891,11 @@ footer p {
         height:304px;
     }
     .box-nuevo-items {
-        left: 215px;
+        left: 205px;
     }
     .box-muñeco{
         height: 450px;
+        margin: 0;
     }
     .box-muñeco .card-pago{
         padding-bottom: 0;
