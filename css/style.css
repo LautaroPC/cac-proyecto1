@@ -765,14 +765,28 @@ footer p {
         margin: 0;
         padding-bottom: 0;
     }
+    form p {
+        font-size: var(--font-small);
+    }
+    h2{
+        font-size: var(--font-xlarge);
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        line-height: 40px;
+        letter-spacing: 0.05em;
+    }
+    hr{
+        width: 300px;
+        height: 0px;
+        margin: 4% 0 8% 0;
+    }
+    /* ------------ General del formulario login y registro -------------*/
     .main-identidad{
         padding-top: 3%;
         padding-bottom: 1.5%;
     }
-    /* ------------ General del formulario login y registro -------------*/
-    form p {
-        font-size: var(--font-small);
-    }
+    
     .form-identidad{
         padding-bottom: 2%;
     }
@@ -790,7 +804,77 @@ footer p {
         justify-content: space-evenly;
         margin: 6.5% 0;
     }
+    /* ------------------------ INDEX ------------------------- */ 
+    /*seccion1*/
+    .index__seccion1 p{
+        font-size: 3.5em;
+        line-height: 35px;
+        padding-bottom: 2.5%;
+    }
+    #p_nuevoingreso{
+        padding-top: 1%;
+        padding-bottom: 4%;
+    }
+    /*seccion2*/
+    .index__seccion2 {
+        margin: 4% 0;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    } 
+    .coleccion__card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 4%;
+        border: 1px solid var(--cuarto-solid);
+        box-shadow: 2px 2px 2px 2px var(--input-color);
+        border-radius: 20px;
+        background-color: #f7f5f5;
+    }
+    .coleccion__card a{
+        font-size: var(--font-small);
+        line-height: 29px;
+        padding: 10px 35px;
+    }
+    .coleccion-card-box{
+        padding-bottom: 10%;
+    }
+    .box-index-seccion2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 4%;
+    }
+    .index-titulo{
+        font-size: var(--font-medium);
+        width: 300px;
+        line-height: 35px;
+        margin-left: 4%;
+    }
+    .index-parrafo{
+        font-size: 1.8em;
+        width: 300px;
+        margin-left: 4%;
+    }
+    .index-img{
+        width:324px;
+        height:324px;
+    }
     
+    /*seccion3*/
+    .index__seccion3{
+        padding: 2% 0;
+    }
+    .index-lanzamientos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
     /* ------------------------ INGRESAR ------------------------- */ 
     .login-box {
         width: 378.85px;
@@ -884,15 +968,7 @@ footer p {
     .items-pago{
         padding-top: 2%;
         padding-bottom: 5%;
-    }
-    h2{
-        font-size: var(--font-xlarge);
-        text-align: center;
-        margin: 0;
-        padding: 0;
-        line-height: 40px;
-        letter-spacing: 0.05em;
-    }
+    }  
     .box-lanzamiento {
         display: flex;
         flex-direction: column;
@@ -907,15 +983,13 @@ footer p {
         left: 205px;
     }
     .box-muñeco{
-        height: 450px;
+        height: 480px;
         margin: 0;
     }
     .box-muñeco .card-pago{
         padding-bottom: 0;
         margin: 0;
     }
-
-
 
     
 
