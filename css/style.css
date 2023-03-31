@@ -867,7 +867,10 @@ footer p {
     .index__seccion3{
         padding: 2% 0;
     }
-    .index-lanzamientos {
+    .index__seccion3 h2{
+        padding-left: 4%;
+    }
+    .index-lanzamientos{
         display: flex;
         flex-direction: column;
         justify-content: center;
