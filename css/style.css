@@ -836,7 +836,69 @@ footer p {
         position: unset;
         padding-bottom: 5%;
     }
-
+    /* ------------------------ ITEMS ------------------------- */
+    
+    .items__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 3% 4% 3%;
+    }
+    .funko-img{
+        width:324px;
+        height:324px;
+    }
+    .items-titulo {
+        font-size: var(--font-medium);
+    }
+    
+    .items-sub {
+        font-size: var(--font-medium);
+    }
+    
+    .items-parrafo {
+        font-size: 2em;
+    }
+    
+    .items-precio {
+        font-size: var(--font-medium);
+    }
+    .items-boton{
+        width: 80%;
+    }
+    .items-pago{
+        padding-top: 2%;
+        padding-bottom: 5%;
+    }
+    h2{
+        font-size: var(--font-xlarge);
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        line-height: 40px;
+        letter-spacing: 0.05em;
+    }
+    .box-lanzamiento {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .items-img{
+        width:304px;
+        height:304px;
+    }
+    .box-nuevo-items {
+        left: 215px;
+    }
+    .box-muñeco{
+        height: 450px;
+    }
+    .box-muñeco .card-pago{
+        padding-bottom: 0;
+        margin: 0;
+    }
 
 
 
