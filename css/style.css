@@ -431,6 +431,63 @@ form p {
     color: var(--secundario-solid);
 }
 
+/* ------------------------ CONTACTO ------------------------- */
+.main__contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    font-family: var(--primario-font);
+    padding: 1.5% 0;
+}
+.main__contacto .form-identidad{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.contacto-box{
+    width: 400.87px;
+}
+.box-comentario{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+.box-comentario p{
+    margin: 2% 1%;
+    letter-spacing: 0.12em;
+}
+.box-comentario textarea{
+    width: 380.63px;
+    height:150px;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    font-size: var(--font-small);
+    padding-left: 2%;
+}
+.contacto-boton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.contacto-boton input{
+    font-size: var(--font-medium);
+    color: var(--light-font-solid);
+    padding: 2% 5%;
+    margin-bottom: 8%;
+}
+.box-enviar-borrar {
+    height: 39.06px;
+    width: 103px;
+    border-radius: 0px;
+    background-color: red;
+    color: var(--light-font-solid);
+    font-size: var(--font-xsmall);
+    text-align: center;
+}
+
 /* -------------------------- SHOP ----------------------------- */
 /* SHOP - SECCION 1 */
 .main__shop {
@@ -722,6 +779,8 @@ form p {
     text-align: left;
     width: 780.63px;
     height:194.83px;
+    padding-left: 2%;
+    padding-top: 1%;
 }
 .crear-cuotas{
     height: 44px;
@@ -755,21 +814,6 @@ form p {
     font-size: var(--font-small);
     text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ========================= FOOTER ========================= */
 footer {
     height: 343px;
@@ -1021,6 +1065,26 @@ footer p {
     .registro-box {
         width: 378.85px;
     }
+    /* ------------------------ CONTACTO ------------------------- */
+    .box-comentario p{
+        margin: 4% 0;
+    }
+    .box-comentario p{
+        margin: 2% 1%;
+        letter-spacing: 0.12em;
+        text-align: center;
+    }
+    .box-comentario textarea{
+        font-size: var(--font-small);
+        width: 260px;
+        height:100px;
+        padding-left: 4%;
+        padding-top: 2%;
+        margin: 4% 0 4% 17%;
+    }
+    .contacto-boton{
+        margin-top: 2%;
+    }
     /* ------------------------ SHOP ------------------------- */
     .main__shop {
         padding: 0;
@@ -1138,7 +1202,7 @@ footer p {
         height: 35px;
     }
     .main-diseño textarea{
-        font-size: var(--font-xsmall);
+        font-size: var(--font-small);
         width: 260px;
         height:100px;
         margin: 4%;
