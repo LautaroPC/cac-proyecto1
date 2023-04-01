@@ -917,7 +917,7 @@ footer p {
     }
     /* ========================= MAIN ========================= */
     h1{
-        font-size: var(--font-medium);
+        font-size: var(--font-large);
         margin: 0;
         padding-bottom: 0;
     }
