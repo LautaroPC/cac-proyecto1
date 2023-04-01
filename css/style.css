@@ -1104,9 +1104,6 @@ footer p {
         margin: 0;
     }
     /* ======================= CREAR ITEMS ====================== */
-    .main-diseño{
-        margin-left: 10%;
-    }
     .main-diseño h1{
         text-align: center;
     }
@@ -1115,6 +1112,7 @@ footer p {
         flex-direction: column;
         align-items: stretch;
         justify-content: space-between;
+        margin-left: 10%;
     }
     .crear-box1 p{
         font-size: var(--font-medium);
@@ -1146,6 +1144,7 @@ footer p {
         margin: 4%;
         padding-left: 4%;
         padding-top: 2%;
+        margin-left: 10%;
     }
     .crear-barra-red1{
         width:250px;
@@ -1171,7 +1170,14 @@ footer p {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        align-items: center;
         padding-bottom: 5%;
+    }
+    .boton-agregar-limpiar{
+        font-size: var(--font-xsmall);
+        padding:0;
+        height: 39.06px;
+        width: 115px;
     }
     /* ========================= FOOTER ========================= */
     footer {
